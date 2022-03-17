@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: student-service
+  devtools:
+    livereload:
+      port: 35729
+      enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+management:
+  endpoint:
+    restart:
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  devtools:
+    livereload:
+      port: 35727
+      enabled: true
+  application:
+    name: progress-report-service
